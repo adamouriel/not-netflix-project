@@ -1,7 +1,7 @@
 # not-netflix
 
 ## Project Vision
-NotNetflix aims to be a dedicated and streamlined clone of the Netflix movie hosting platform, this recreation will be detailed and faithful to the original website design. The goal is to build a web application where users can explore, search, and watch movie trailers, offering a glimpse into the vast universe of films and shows, as provided by The Movie DB platform.
+NotNetflix aims to be a dedicated and streamlined clone of the Netflix movie hosting platform. This recreation will be detailed and faithful to the original website design. The goal is to build a web application where users can explore, search, and watch movie trailers, offering a glimpse into the vast universe of films and shows, as provided by The Movie DB platform.
 
 ## MVP
 Landing Page: A captivating first impression is crucial. The landing page will feature a selection of movies, categorized into sections like "Popular," genre specific cateogires like "Horror," and "Recently Released." It will serve as the hub for movie enthusiasts to explore new and exciting content.
