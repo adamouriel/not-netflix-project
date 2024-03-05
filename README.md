@@ -29,7 +29,7 @@ Frontend and Backend Development: The focus will be on creating a responsive, fa
 
 Iterative Testing: Regular testing will be integral to the development process, ensuring each feature works perfectly and the user experience is smooth across different devices and browsers.
 
-## Aticipated Challenges
+## Anticipated Challenges
 
 API Limitations: Navigating the limitations and usage quotas of The Movie DB API will be crucial to ensuring the app runs smoothly without hitting any roadblocks.
 
