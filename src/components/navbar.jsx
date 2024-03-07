@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom'
 
 
 export default function Navbar() {
-    const [query, setQuery] = useState(''); // State to hold the input value
+    const [query, setQuery] = useState(''); 
 
     const handleSubmit = (event) => {
-        event.preventDefault(); // Prevents the default form submission behavior
-        console.log('Searching for:', query); // Here, you can add logic to handle the search
-        // For example, redirect to a search results page or filter displayed data
+        event.preventDefault(); 
+        console.log('Searching for:', query); 
     };
 
     return (
