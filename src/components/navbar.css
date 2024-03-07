@@ -1,4 +1,43 @@
-.nav {
+.navbar {
     background-color: black;
-    height: 100vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.not-netflix{
+    color: red;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.menu p {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.home, .tv, .movies {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-form {
+    padding: 10px;
+    font-size: 20px;
+    border: 10px yellow;
+    margin-right: 5px;
 }
