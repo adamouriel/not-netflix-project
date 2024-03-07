@@ -1,0 +1,38 @@
+* {
+    background-color: #141414;
+}
+
+.movie-row {
+  margin: 20px 0;
+  color: white;
+}
+
+.movie-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.movie-card {
+  flex: 0 0 auto;
+  width: calc(16.66% - 20px); 
+  position: relative;
+}
+
+.movie-poster {
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center;
+}
+
+.movie-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

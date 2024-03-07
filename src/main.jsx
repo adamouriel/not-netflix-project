@@ -5,12 +5,13 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Layout from './layout.jsx'
 import Movies from './components/movies.jsx'
 import TV from './components/tvshows.jsx'
-import Home from './components/landing.jsx'
+// import Home from './components/landing.jsx'
+import App from './App.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-      <Route path='' element={<Home />}/>
+      <Route index element={<App />}/>
       <Route path='tv-shows' element={<TV />}/>
       <Route path='movies' element={<Movies />}/>
     </Route>

@@ -1,5 +1,5 @@
 .navbar {
-    background-color: black;
+    background-color: #141414;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -17,6 +17,10 @@
     margin-right: 40px;
 }
 
+.title {
+    white-space: nowrap;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -28,6 +32,7 @@
     margin-right: 60px;
     color: white;
     text-decoration: none;
+    white-space: nowrap
 }
 
 .home, .tv, .movies {
@@ -39,6 +44,5 @@
     padding: 10px;
     font-size: 20px;
     margin-left: 20px;
-    margin-right: 5px;
 }
 
