@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import YouTube from 'react-youtube'
+import movieTrailer from 'movie-trailer'
 
 export default function App(){
   const [movies, setMovies] = useState([])
+  const [trailerUrl, setTrailerUrl] = useState("")
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -24,11 +27,30 @@ export default function App(){
   function MovieCard({ movie }) {
     return (
       <div className="movie-card">
-        <img src={'https://image.tmdb.org/t/p/w500'+movie['poster_path']} alt={movie.title} className="movie-poster"/>
+        <img src={'https://image.tmdb.org/t/p/w500'+movie['poster_path']} alt={movie.title} className="movie-poster"
+        onClick={() => handleClick(movie)}/>
       </div>
     )
   }
+  const handleClick = (movie) => {
+    console.log(movie)
+    if (trailerUrl) {
+      setTrailerUrl('');
+    } else {
+      movieTrailer(movie.title)
+      .then((url) => {
+          //https://www.youtube.com/watch?v=KqtS_Vr2rqw
+       if (url) setTrailerUrl(url.split('v=')[1]);
+      }).catch(error => console.log(error));
+    }
+  };
 
+
+  const opts = {
+    height:"300px",
+    width: "60%", 
+    playerVars: { autoplay: 1}
+  }
 
   return (
     <>
@@ -39,6 +61,11 @@ export default function App(){
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
+      {trailerUrl && 
+      (<div className="movie-trailer">  
+        <YouTube videoId={trailerUrl} opts={opts}/>
+      </div>
+        )}
     </div>
     </>
   )
